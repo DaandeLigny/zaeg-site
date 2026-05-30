@@ -1,33 +1,108 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400&display=swap" rel="stylesheet">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ZAEG Houtbewerking | Houten meubels op maat | Meubelmaker omgeving Utrecht</title>
     <meta name="description" content="Welkom bij ZAEG, waar unieke houten meubelstukken op maat worden gemaakt met aandacht voor detail. Ontdek ons vakmanschap en de mogelijkheden voor het creëren van uw perfecte meubel. Bekijk ons portfolio en neem contact op voor meer informatie. ZAEG is gevestigd in Den Dolder en levert door heel Nederland.">
-    <meta property="og:image" content="https://raw.githubusercontent.com/DaandeLigny/zaeg-site/refs/heads/main/images/Algemeen/ZAEG-logo.jpg">
+    <link rel="canonical" href="https://www.zaeg.nl/">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="nl_NL">
+    <meta property="og:site_name" content="ZAEG Houtbewerking">
+    <meta property="og:title" content="ZAEG Houtbewerking | Houten meubels op maat">
+    <meta property="og:description" content="Unieke houten meubels op maat, ontworpen en gemaakt in Den Dolder voor klanten in Utrecht en heel Nederland.">
+    <meta property="og:url" content="https://www.zaeg.nl/">
+    <meta property="og:image" content="https://www.zaeg.nl/images/Algemeen/ZAEG-logo.jpg">
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:width" content="640">
     <meta property="og:image:height" content="360">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ZAEG Houtbewerking | Houten meubels op maat">
+    <meta name="twitter:description" content="Ambachtelijke maatwerk meubels van hout, ontworpen en gemaakt in Den Dolder.">
+    <meta name="twitter:image" content="https://www.zaeg.nl/images/Algemeen/ZAEG-logo.jpg">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'EB Garamond', serif;
+        }
+
+        .hero {
+            position: relative;
+            min-height: 92vh;
+            background-image:
+                linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.32)),
+                url('./images/Algemeen/ZAEG-meubel-op-maat-iroko-hout-met-ribglas.webp');
+        }
+
+        .hero-logo {
+            width: min(80vw, 34rem);
+        }
+
+        .section-nav a {
+            text-underline-offset: 0.35em;
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FurnitureStore",
+        "name": "ZAEG Houtbewerking",
+        "url": "https://www.zaeg.nl/",
+        "image": "https://www.zaeg.nl/images/Algemeen/ZAEG-logo.jpg",
+        "description": "ZAEG maakt unieke houten meubels op maat met aandacht voor ontwerp, materiaal en afwerking.",
+        "telephone": "+31634380849",
+        "email": "ZAEGhoutbewerking@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Fornheselaan 202",
+            "postalCode": "3734 GE",
+            "addressLocality": "Den Dolder",
+            "addressCountry": "NL"
+        },
+        "areaServed": [
+            "Utrecht",
+            "Den Dolder",
+            "Zeist",
+            "Nederland"
+        ],
+        "sameAs": [
+            "https://instagram.com/ZAEGhoutbewerking"
+        ]
+    }
+    </script>
 </head>
-<script>
-    fetch("https://script.google.com/macros/s/AKfycbw2OFjmaODQpj4bOyuC3XC5ICdMxNLyHWJGgH9JnBwyqGhulGStvvFieq4CbAH1VNZC/exec?pagina=" + encodeURIComponent(location.pathname))
-    .catch(err => console.log("Fout bij loggen:", err));
-</script>
-<body class="bg-white text-gray-800" style="font-family: 'EB Garamond', serif;">
-    <header class="min-h-screen flex flex-col justify-center items-center text-center px-4 bg-cover bg-center bg-no-repeat text-white" style="background-image: url('./images/Algemeen/ZAEG-meubel-op-maat-iroko-hout-met-ribglas.webp');">
+<body class="bg-white text-gray-800">
+    <header class="hero flex flex-col justify-center items-center text-center px-4 bg-cover bg-center bg-no-repeat text-white">
         <div class="w-full max-w-lg flex flex-col items-center">
-            <img src="./images/SVG/ZAEG-logo.svg" alt="ZAEG | Meubelmaker houten meubels op maat | Houtbewerking Utrecht en omgeving" class="w-full h-auto mb-10">
+            <img src="./images/SVG/ZAEG-logo.svg" alt="ZAEG | Meubelmaker houten meubels op maat | Houtbewerking Utrecht en omgeving" class="hero-logo h-auto mb-8" width="480" height="220" decoding="async">
             <h1 class="text-xl md:text-2xl text-center w-full" style="font-family: 'EB Garamond', serif; font-weight: 400; font-style: italic;">
                 Unieke houten meubels op maat met zorg ontworpen en met precisie gemaakt
             </h1>
         </div>
     </header>
 
+    <nav class="section-nav bg-white text-center border-b border-gray-200 px-4 py-5 text-lg md:text-xl" aria-label="Paginanavigatie">
+        <div class="flex flex-wrap justify-center items-center gap-x-5 gap-y-3">
+            <a href="#over" class="hover:underline">Over ZAEG</a>
+            <span class="text-gray-400" aria-hidden="true">&middot;</span>
+            <a href="#werkwijze" class="hover:underline">Werkwijze</a>
+            <span class="text-gray-400" aria-hidden="true">&middot;</span>
+            <a href="#portfolio" class="hover:underline">Galerij</a>
+            <span class="text-gray-400" aria-hidden="true">&middot;</span>
+            <a href="#contact" class="hover:underline">Contact</a>
+        </div>
+    </nav>
+
     <!-- Over ZAEG -->
-    <section class="py-24 px-4 max-w-6xl mx-auto">
+    <section id="over" class="py-24 px-4 max-w-6xl mx-auto">
         <div class="flex flex-col md:flex-row items-center md:items-start gap-10">
             <div class="md:w-1/2 text-left">
                 <h2 class="text-4xl font-normal mb-10 text-center md:text-left" style="font-family: 'EB Garamond', serif;">Over ZAEG</h2>
@@ -53,7 +128,7 @@
                 </div>
             </div>
             <div class="md:w-1/2">
-                <img src="./images/Algemeen/ZAEG-meubel-op-maat-cadeaudoos-zwaluwstaart.webp" alt="Beukenhouten cadeaudoos met zichtbare zwaluwstaartverbinding | Ambachtelijke houtbewerking Zeist" class="w-full h-auto rounded-sm shadow-md">
+                <img src="./images/Algemeen/ZAEG-meubel-op-maat-cadeaudoos-zwaluwstaart.webp" alt="Beukenhouten cadeaudoos met zichtbare zwaluwstaartverbinding | Ambachtelijke houtbewerking Zeist" class="w-full h-auto rounded-sm shadow-md" width="1000" height="1500" loading="lazy" decoding="async">
             </div>
         </div>
     </section>
@@ -61,11 +136,11 @@
     <hr class="border-t border-gray-800 w-3/4 mx-auto my-6">
 
     <!-- Werkwijze -->
-    <section class="bg-white py-24 px-4 max-w-6xl mx-auto">
+    <section id="werkwijze" class="bg-white py-24 px-4 max-w-6xl mx-auto">
         <h2 class="text-4xl font-normal mb-12 text-center" style="font-family: 'EB Garamond', serif;">Werkwijze</h2>
         <div class="grid md:grid-cols-3 gap-8">
             <div class="flex flex-col justify-start">
-                <img src="./images/Algemeen/ZAEG-meubel-op-maat-walnoot-platenkast.webp" alt="Walnoot DJ meubel op maat | Binnenzijde met opbergruimte voor platenspelers | Meubelontwerp ZAEG" class="h-48 w-full object-cover rounded-sm mb-6">
+                <img src="./images/Algemeen/ZAEG-meubel-op-maat-walnoot-platenkast.webp" alt="Walnoot DJ meubel op maat | Binnenzijde met opbergruimte voor platenspelers | Meubelontwerp ZAEG" class="h-48 w-full object-cover rounded-sm mb-6" width="600" height="400" loading="lazy" decoding="async">
                 <div>
                     <h3 class="text-2xl font-normal mb-2 text-center md:text-left" style="font-family: 'EB Garamond', serif;">Creatief ontwerp</h3>
                     <p class="text-lg text-gray-700 leading-relaxed" style="font-family: 'EB Garamond', serif;">
@@ -74,7 +149,7 @@
                 </div>
             </div>
             <div class="flex flex-col justify-start">
-                <img src="./images/Algemeen/ZAEG-werkwijze-schaafsels.webp" alt="Ambachtelijke houtbewerking in Utrecht | Schaafkrullen op de werkvloer | Meubelmaker met transparant bouwproces" class="h-48 w-full object-cover rounded-sm mb-6">
+                <img src="./images/Algemeen/ZAEG-werkwijze-schaafsels.webp" alt="Ambachtelijke houtbewerking in Utrecht | Schaafkrullen op de werkvloer | Meubelmaker met transparant bouwproces" class="h-48 w-full object-cover rounded-sm mb-6" width="600" height="800" loading="lazy" decoding="async">
                 <div>
                     <h3 class="text-2xl font-normal mb-2 text-center md:text-left" style="font-family: 'EB Garamond', serif;">Transparant bouwproces</h3>
                     <p class="text-lg text-gray-700 leading-relaxed" style="font-family: 'EB Garamond', serif;">
@@ -83,7 +158,7 @@
                 </div>
             </div>
             <div class="flex flex-col justify-start">
-                <img src="./images/Algemeen/ZAEG-meubel-op-maat-aflevering.webp" alt="Modern tv-meubel van walnoot met speakers | Maatwerk woonkamermeubel Utrecht | Afgeleverd door ZAEG" class="h-48 w-full object-cover rounded-sm mb-6">
+                <img src="./images/Algemeen/ZAEG-meubel-op-maat-aflevering.webp" alt="Modern tv-meubel van walnoot met speakers | Maatwerk woonkamermeubel Utrecht | Afgeleverd door ZAEG" class="h-48 w-full object-cover rounded-sm mb-6" width="600" height="283" loading="lazy" decoding="async">
                 <div>
                     <h3 class="text-2xl font-normal mb-2 text-center md:text-left" style="font-family: 'EB Garamond', serif;">Zorgvuldige aflevering</h3>
                     <p class="text-lg text-gray-700 leading-relaxed" style="font-family: 'EB Garamond', serif;">
@@ -97,7 +172,7 @@
     <hr class="border-t border-gray-800 w-3/4 mx-auto my-6">
 
     <!-- Portfolio -->
-    <section class="py-24 px-4 max-w-6xl mx-auto">
+    <section id="portfolio" class="py-24 px-4 max-w-6xl mx-auto">
         <h2 class="text-4xl font-normal mb-8 text-center" style="font-family: 'EB Garamond', serif;">Galerij</h2><br>
 
         <!-- Platenkast -->
@@ -108,16 +183,16 @@
         <div class="grid grid-cols-1 gap-1 md:grid-cols-3 md:gap-2 items-stretch mb-12">
             <!-- Linker portretfoto -->
             <div class="col-span-1">
-                <img src="./images/Platenkast - Walnoot/Portfolio-ZAEG-meubel-op-maat-walnoot-platenkast-links.webp" alt="Linker zijaanzicht van walnoot DJ kast | Afgerond ontwerp voor audioapparatuur" class="w-full h-full object-cover rounded-sm shadow-md">
+                <img src="./images/Platenkast - Walnoot/Portfolio-ZAEG-meubel-op-maat-walnoot-platenkast-links.webp" alt="Linker zijaanzicht van walnoot DJ kast | Afgerond ontwerp voor audioapparatuur" class="w-full h-full object-cover rounded-sm shadow-md" width="1000" height="1500" loading="lazy" decoding="async">
             </div>
             <!-- Twee gestapelde landscape foto's -->
             <div class="col-span-1 grid grid-rows-2 gap-1 md:gap-2">
-                <img src="./images/Platenkast - Walnoot/Portfolio-ZAEG-meubel-op-maat-walnoot-platenkast-midden.webp" alt="Vooraanzicht van DJ meubel met dubbele rijen vakken | Handgemaakt massief walnoot" class="w-full h-full object-cover rounded-sm shadow-md">
-                <img src="./images/Platenkast - Walnoot/Portfolio-ZAEG-meubel-op-maat-walnoot-platenkast-hoek.webp" alt="Detail DJ Booth werkblad met ronde hoeken en kabelsleuf | Walnoot op maat gemaakt" class="w-full h-full object-cover rounded-sm shadow-md">
+                <img src="./images/Platenkast - Walnoot/Portfolio-ZAEG-meubel-op-maat-walnoot-platenkast-midden.webp" alt="Vooraanzicht van DJ meubel met dubbele rijen vakken | Handgemaakt massief walnoot" class="w-full h-full object-cover rounded-sm shadow-md" width="1000" height="667" loading="lazy" decoding="async">
+                <img src="./images/Platenkast - Walnoot/Portfolio-ZAEG-meubel-op-maat-walnoot-platenkast-hoek.webp" alt="Detail DJ Booth werkblad met ronde hoeken en kabelsleuf | Walnoot op maat gemaakt" class="w-full h-full object-cover rounded-sm shadow-md" width="1000" height="667" loading="lazy" decoding="async">
             </div>
             <!-- Rechter portretfoto -->
             <div class="col-span-1">
-                <img src="./images/Platenkast - Walnoot/Portfolio-ZAEG-meubel-op-maat-walnoot-platenkast-rechts.webp" alt="Rechter zijde van platenspeler meubel met vakken en afgeronde hoeken" class="w-full h-full object-cover rounded-sm shadow-md">
+                <img src="./images/Platenkast - Walnoot/Portfolio-ZAEG-meubel-op-maat-walnoot-platenkast-rechts.webp" alt="Rechter zijde van platenspeler meubel met vakken en afgeronde hoeken" class="w-full h-full object-cover rounded-sm shadow-md" width="1000" height="1500" loading="lazy" decoding="async">
             </div>
         </div>
 
@@ -127,12 +202,12 @@
             De klant zocht een decoratief dressoir met een retro uitstraling, geschikt om fotoboeken, kookboeken en magazines in te presenteren. Er was al een globaal idee van de gewenste afmetingen en vormgeving. Na een aantal ontwerpiteraties is dit het resultaat. De afgeronde hoeken, het ribglas en de open frameconstructie versterken de retro look. Het meubel is gemaakt van massief iroko, een duurzame hardhoutsoort met een warme, natuurlijke kleur. Een uniek ontwerp waar ik met veel plezier aan heb gewerkt.
         </p>
         <div class="grid grid-cols-1 gap-1 md:grid-cols-3 md:grid-rows-2 md:gap-2 mb-12">
-            <img src="./images/Dressoir - Iroko/Portfolio-ZAEG-meubel-op-maat-iroko-dressoir-hoek.webp" alt="Hoekdetail van retro dressoir met ribbel structuurglas en houten frame in iroko hout" class="w-full h-full object-cover rounded-sm shadow-md">
-            <img src="./images/Dressoir - Iroko/Portfolio-ZAEG-meubel-op-maat-iroko-dressoir-rechts.webp" alt="Iroko retro dressoir met fotoboekdisplay | Rechterzijde op betonvloer | Maatwerk meubel" class="w-full h-full object-cover rounded-sm shadow-md">
-            <img src="./images/Dressoir - Iroko/Portfolio-ZAEG-meubel-op-maat-iroko-dressoir-glas.webp" alt="Maatwerk iroko dressoir met ribbelglas | Kast voor boeken, tijdschriften en designaccenten" class="w-full h-full object-cover rounded-sm shadow-md">
-            <img src="./images/Dressoir - Iroko/Portfolio-ZAEG-meubel-op-maat-iroko-dressoir-links.webp" alt="Linkerzijde retro Iroko dressoir | Maatwerk houten meubel uit Zeist" class="w-full h-full object-cover rounded-sm shadow-md">
-            <img src="./images/Dressoir - Iroko/Portfolio-ZAEG-meubel-op-maat-iroko-dressoir-houtverbinding.webp" alt="Detail van maatwerk houtverbinding in massief iroko kast | Ambachtelijke constructietechniek" class="w-full h-full object-cover rounded-sm shadow-md">
-            <img src="./images/Dressoir - Iroko/Portfolio-ZAEG-meubel-op-maat-iroko-dressoir-zijaanzicht.webp" alt="Retro dressoir van iroko met legplanken | Maatwerk kast uit Zeist volledig in beeld" class="w-full h-full object-cover rounded-sm shadow-md">
+            <img src="./images/Dressoir - Iroko/Portfolio-ZAEG-meubel-op-maat-iroko-dressoir-hoek.webp" alt="Hoekdetail van retro dressoir met ribbel structuurglas en houten frame in iroko hout" class="w-full h-full object-cover rounded-sm shadow-md" width="1000" height="1000" loading="lazy" decoding="async">
+            <img src="./images/Dressoir - Iroko/Portfolio-ZAEG-meubel-op-maat-iroko-dressoir-rechts.webp" alt="Iroko retro dressoir met fotoboekdisplay | Rechterzijde op betonvloer | Maatwerk meubel" class="w-full h-full object-cover rounded-sm shadow-md" width="1000" height="1000" loading="lazy" decoding="async">
+            <img src="./images/Dressoir - Iroko/Portfolio-ZAEG-meubel-op-maat-iroko-dressoir-glas.webp" alt="Maatwerk iroko dressoir met ribbelglas | Kast voor boeken, tijdschriften en designaccenten" class="w-full h-full object-cover rounded-sm shadow-md" width="1000" height="1000" loading="lazy" decoding="async">
+            <img src="./images/Dressoir - Iroko/Portfolio-ZAEG-meubel-op-maat-iroko-dressoir-links.webp" alt="Linkerzijde retro Iroko dressoir | Maatwerk houten meubel uit Zeist" class="w-full h-full object-cover rounded-sm shadow-md" width="1000" height="1000" loading="lazy" decoding="async">
+            <img src="./images/Dressoir - Iroko/Portfolio-ZAEG-meubel-op-maat-iroko-dressoir-houtverbinding.webp" alt="Detail van maatwerk houtverbinding in massief iroko kast | Ambachtelijke constructietechniek" class="w-full h-full object-cover rounded-sm shadow-md" width="1000" height="1000" loading="lazy" decoding="async">
+            <img src="./images/Dressoir - Iroko/Portfolio-ZAEG-meubel-op-maat-iroko-dressoir-zijaanzicht.webp" alt="Retro dressoir van iroko met legplanken | Maatwerk kast uit Zeist volledig in beeld" class="w-full h-full object-cover rounded-sm shadow-md" width="1000" height="1000" loading="lazy" decoding="async">
         </div>
 
         <!-- Wijnrek -->
@@ -142,9 +217,9 @@
         </p>
 
         <div class="grid grid-cols-1 gap-1 md:grid-cols-3 md:gap-2 mb-12">
-            <img src="./images/Wijnrek - Eiken/Portfolio-ZAEG-meubel-op-maat-wijnrek-onderkant.webp" alt="Eikenhouten wijnrek met open vakverdeling en flessen | Ontworpen voor thuisbar interieur" class="w-full h-full object-cover rounded-sm shadow-md">
-            <img src="./images/Wijnrek - Eiken/Portfolio-ZAEG-meubel-op-maat-wijnrek-totaal.webp" alt="Eikenhouten wijnrek | Handgemaakt meubel voor wijnflessenopslag in Utrecht" class="w-full h-full object-cover rounded-sm shadow-md">
-            <img src="./images/Wijnrek - Eiken/Portfolio-ZAEG-meubel-op-maat-wijnrek-midden.webp" alt="Eikenhouten wijnkast op maat | Zijkant met lattenstructuur en plintdetail" class="w-full h-full object-cover rounded-sm shadow-md">
+            <img src="./images/Wijnrek - Eiken/Portfolio-ZAEG-meubel-op-maat-wijnrek-onderkant.webp" alt="Eikenhouten wijnrek met open vakverdeling en flessen | Ontworpen voor thuisbar interieur" class="w-full h-full object-cover rounded-sm shadow-md" width="1000" height="1500" loading="lazy" decoding="async">
+            <img src="./images/Wijnrek - Eiken/Portfolio-ZAEG-meubel-op-maat-wijnrek-totaal.webp" alt="Eikenhouten wijnrek | Handgemaakt meubel voor wijnflessenopslag in Utrecht" class="w-full h-full object-cover rounded-sm shadow-md" width="1000" height="1500" loading="lazy" decoding="async">
+            <img src="./images/Wijnrek - Eiken/Portfolio-ZAEG-meubel-op-maat-wijnrek-midden.webp" alt="Eikenhouten wijnkast op maat | Zijkant met lattenstructuur en plintdetail" class="w-full h-full object-cover rounded-sm shadow-md" width="1000" height="1500" loading="lazy" decoding="async">
         </div>
 
         <!-- Kruidenrek -->
@@ -156,16 +231,16 @@
         <div class="grid grid-cols-1 gap-1 md:grid-cols-3 md:gap-2 items-stretch mb-12">
             <!-- Linker portretfoto -->
             <div class="col-span-1">
-                <img src="./images/Kruidenrek - Eiken/Portfolio-ZAEG-meubel-op-maat-kruidenrek-kruiden.webp" alt="Maatwerk kruidenrek van eikenhout en iroko | Gevuld met specerijen in houten keukeninterieur" class="w-full h-full object-cover rounded-sm shadow-md">
+                <img src="./images/Kruidenrek - Eiken/Portfolio-ZAEG-meubel-op-maat-kruidenrek-kruiden.webp" alt="Maatwerk kruidenrek van eikenhout en iroko | Gevuld met specerijen in houten keukeninterieur" class="w-full h-full object-cover rounded-sm shadow-md" width="1000" height="1500" loading="lazy" decoding="async">
             </div>
             <!-- Twee gestapelde landscape foto's -->
             <div class="col-span-1 grid grid-rows-2 gap-1 md:gap-2">
-                <img src="./images/Kruidenrek - Eiken/Portfolio-ZAEG-meubel-op-maat-kruidenrek-links.webp" alt="Detail van verstekverbinding in eikenhouten kruidenrek | Ambachtelijke afwerking met iroko accenten" class="w-full h-full object-cover rounded-sm shadow-md">
-                <img src="./images/Kruidenrek - Eiken/Portfolio-ZAEG-meubel-op-maat-kruidenrek-onderkant.webp" alt="Eikenhouten kruidenrek met vakverdeling | Voorzien van ZAEG logo en maatwerk indeling" class="w-full h-full object-cover rounded-sm shadow-md">
+                <img src="./images/Kruidenrek - Eiken/Portfolio-ZAEG-meubel-op-maat-kruidenrek-links.webp" alt="Detail van verstekverbinding in eikenhouten kruidenrek | Ambachtelijke afwerking met iroko accenten" class="w-full h-full object-cover rounded-sm shadow-md" width="1000" height="667" loading="lazy" decoding="async">
+                <img src="./images/Kruidenrek - Eiken/Portfolio-ZAEG-meubel-op-maat-kruidenrek-onderkant.webp" alt="Eikenhouten kruidenrek met vakverdeling | Voorzien van ZAEG logo en maatwerk indeling" class="w-full h-full object-cover rounded-sm shadow-md" width="1000" height="667" loading="lazy" decoding="async">
             </div>
             <!-- Rechter portretfoto -->
             <div class="col-span-1">
-                <img src="./images/Kruidenrek - Eiken/Portfolio-ZAEG-meubel-op-maat-kruidenrek-totaal.webp" alt="Volledig wandmodel kruidenrek van hout | Functioneel maatwerk ontwerp voor de keukenwand" class="w-full h-full object-cover rounded-sm shadow-md">
+                <img src="./images/Kruidenrek - Eiken/Portfolio-ZAEG-meubel-op-maat-kruidenrek-totaal.webp" alt="Volledig wandmodel kruidenrek van hout | Functioneel maatwerk ontwerp voor de keukenwand" class="w-full h-full object-cover rounded-sm shadow-md" width="1000" height="1500" loading="lazy" decoding="async">
             </div>
         </div>
 
@@ -178,16 +253,16 @@
         <div class="grid grid-cols-1 gap-1 md:grid-cols-3 md:gap-2 items-stretch mb-12">
             <!-- Linker portretfoto -->
             <div class="col-span-1">
-                <img src="./images/Cadeaudoos - Beuken/Portfolio-ZAEG-meubel-op-maat-cadeaudoos-zwaluwstaart.webp" alt="Detail van hoekverbinding in beukenhouten cadeaudoos | Zwaluwstaartconstructie op maat in Utrecht" class="w-full h-full object-cover rounded-sm shadow-md">
+                <img src="./images/Cadeaudoos - Beuken/Portfolio-ZAEG-meubel-op-maat-cadeaudoos-zwaluwstaart.webp" alt="Detail van hoekverbinding in beukenhouten cadeaudoos | Zwaluwstaartconstructie op maat in Utrecht" class="w-full h-full object-cover rounded-sm shadow-md" width="1000" height="1500" loading="lazy" decoding="async">
             </div>
             <!-- Twee gestapelde landscape foto's -->
             <div class="col-span-1 grid grid-rows-2 gap-1 md:gap-2">
-                <img src="./images/Cadeaudoos - Beuken/Portfolio-ZAEG-meubel-op-maat-cadeaudoos-lange-zijkant.webp" alt="Langszijde van handgemaakte beukenhouten doos | Zichtbare zwaluwstaartverbinding in ambachtelijk ontwerp" class="w-full h-full object-cover rounded-sm shadow-md">
-                <img src="./images/Cadeaudoos - Beuken/Portfolio-ZAEG-meubel-op-maat-cadeaudoos-gravering.webp" alt="Beukenhouten cadeaudoos met gegraveerde persoonlijke tekst | Handgemaakt en uniek geschenk" class="w-full h-full object-cover rounded-sm shadow-md">
+                <img src="./images/Cadeaudoos - Beuken/Portfolio-ZAEG-meubel-op-maat-cadeaudoos-lange-zijkant.webp" alt="Langszijde van handgemaakte beukenhouten doos | Zichtbare zwaluwstaartverbinding in ambachtelijk ontwerp" class="w-full h-full object-cover rounded-sm shadow-md" width="1000" height="667" loading="lazy" decoding="async">
+                <img src="./images/Cadeaudoos - Beuken/Portfolio-ZAEG-meubel-op-maat-cadeaudoos-gravering.webp" alt="Beukenhouten cadeaudoos met gegraveerde persoonlijke tekst | Handgemaakt en uniek geschenk" class="w-full h-full object-cover rounded-sm shadow-md" width="1000" height="667" loading="lazy" decoding="async">
             </div>
             <!-- Rechter portretfoto -->
             <div class="col-span-1">
-                <img src="./images/Cadeaudoos - Beuken/Portfolio-ZAEG-meubel-op-maat-cadeaudoos-korte-zijkant.webp" alt="Maatwerk cadeaudoos van beukenhout | Ambachtelijke houtbewerking met zwaluwstaartverbinding" class="w-full h-full object-cover rounded-sm shadow-md">
+                <img src="./images/Cadeaudoos - Beuken/Portfolio-ZAEG-meubel-op-maat-cadeaudoos-korte-zijkant.webp" alt="Maatwerk cadeaudoos van beukenhout | Ambachtelijke houtbewerking met zwaluwstaartverbinding" class="w-full h-full object-cover rounded-sm shadow-md" width="1000" height="1500" loading="lazy" decoding="async">
             </div>
         </div>
 
@@ -200,16 +275,16 @@
         <div class="grid grid-cols-1 gap-1 md:grid-cols-3 md:gap-2 items-stretch mb-12">
             <!-- Linker portretfoto -->
             <div class="col-span-1">
-                <img src="./images/TV Meubel - Walnoot/Portfolio-ZAEG-meubel-op-maat-walnoot-tv-meubel-detail-rechts.webp" alt="Detail van ingebouwde luidspreker in walnoot tv-meubel | Speaker in massieve afgeronde hoek" class="w-full h-full object-cover rounded-sm shadow-md">
+                <img src="./images/TV Meubel - Walnoot/Portfolio-ZAEG-meubel-op-maat-walnoot-tv-meubel-detail-rechts.webp" alt="Detail van ingebouwde luidspreker in walnoot tv-meubel | Speaker in massieve afgeronde hoek" class="w-full h-full object-cover rounded-sm shadow-md" width="1704" height="2560" loading="lazy" decoding="async">
             </div>
             <!-- Twee gestapelde landscape foto's -->
             <div class="col-span-1 grid grid-rows-2 gap-1 md:gap-2">
-                <img src="./images/TV Meubel - Walnoot/Portfolio-ZAEG-meubel-op-maat-walnoot-tv-meubel-rechts.webp" alt="Zijaanzicht van walnoot tv-meubel met wit speakerpaneel | Rond afgewerkt meubel met moderne audio-integratie" class="w-full h-full object-cover rounded-sm shadow-md">
-                <img src="./images/TV Meubel - Walnoot/Portfolio-ZAEG-meubel-op-maat-walnoot-tv-meubel-voorkant.webp" alt="Vooraanzicht van zwevend walnoot tv-meubel met audio en apparatuur | Maatwerk mediameubel met geïntegreerde luidsprekers" class="w-full h-full object-cover rounded-sm shadow-md">
+                <img src="./images/TV Meubel - Walnoot/Portfolio-ZAEG-meubel-op-maat-walnoot-tv-meubel-rechts.webp" alt="Zijaanzicht van walnoot tv-meubel met wit speakerpaneel | Rond afgewerkt meubel met moderne audio-integratie" class="w-full h-full object-cover rounded-sm shadow-md" width="1920" height="1278" loading="lazy" decoding="async">
+                <img src="./images/TV Meubel - Walnoot/Portfolio-ZAEG-meubel-op-maat-walnoot-tv-meubel-voorkant.webp" alt="Vooraanzicht van zwevend walnoot tv-meubel met audio en apparatuur | Maatwerk mediameubel met geïntegreerde luidsprekers" class="w-full h-full object-cover rounded-sm shadow-md" width="1920" height="1278" loading="lazy" decoding="async">
             </div>
             <!-- Rechter portretfoto -->
             <div class="col-span-1">
-                <img src="./images/TV Meubel - Walnoot/Portfolio-ZAEG-meubel-op-maat-walnoot-tv-meubel-zijkant.webp" alt="Linkerzijkant van tv-meubel met vloeiende ronding in massief walnoot | Ambachtelijke afwerking van maatwerk woonkamermeubel" class="w-full h-full object-cover rounded-sm shadow-md">
+                <img src="./images/TV Meubel - Walnoot/Portfolio-ZAEG-meubel-op-maat-walnoot-tv-meubel-zijkant.webp" alt="Linkerzijkant van tv-meubel met vloeiende ronding in massief walnoot | Ambachtelijke afwerking van maatwerk woonkamermeubel" class="w-full h-full object-cover rounded-sm shadow-md" width="1704" height="2560" loading="lazy" decoding="async">
             </div>
         </div>
 
@@ -218,19 +293,19 @@
     <hr class="border-t border-gray-800 w-3/4 mx-auto my-6">
 
     <!-- Contact -->
-    <section class="bg-white py-24 px-4 max-w-6xl mx-auto">
+    <section id="contact" class="bg-white py-24 px-4 max-w-6xl mx-auto">
         <h2 class="text-4xl font-normal mb-12 text-center" style="font-family: 'EB Garamond', serif;">Contact</h2>
         <div>
             <p class="text-xl text-gray-700 leading-relaxed mb-4 text-center" style="font-family: 'EB Garamond', serif;">
                 Heeft u vragen of wilt u zelf een uniek stuk laten maken? Neem contact op!<br><br>
                 <a href="mailto:ZAEGhoutbewerking@gmail.com" class="hover:underline">
-                    <img src="./images/SVG/email.svg" alt="Email icoon" class="inline-block align-middle mr-1 h-5 w-5">ZAEGhoutbewerking@gmail.com
+                    <img src="./images/SVG/email.svg" alt="Email icoon" class="inline-block align-middle mr-1 h-5 w-5" width="800" height="800" loading="lazy" decoding="async">ZAEGhoutbewerking@gmail.com
                 </a><br>
                 <a href="tel:0634380849" class="hover:underline">
-                    <img src="./images/SVG/phone.svg" alt="Telefoon icoon" class="inline-block align-middle mr-1 h-5 w-5">0634380849
+                    <img src="./images/SVG/phone.svg" alt="Telefoon icoon" class="inline-block align-middle mr-1 h-5 w-5" width="256" height="256" loading="lazy" decoding="async">0634380849
                 </a><br>
                 <a href="https://instagram.com/ZAEGhoutbewerking" target="_blank" rel="noopener noreferrer" class="hover:underline inline-block">
-                    <img src="./images/SVG/instagram.svg" alt="Instagram icoon" class="inline-block align-middle mr-1 h-5 w-5">@ZAEGhoutbewerking
+                    <img src="./images/SVG/instagram.svg" alt="Instagram icoon" class="inline-block align-middle mr-1 h-5 w-5" width="150" height="150" loading="lazy" decoding="async">@ZAEGhoutbewerking
                 </a><br><br>Bezoekadres (alleen op afspraak):<br>
                 <a href="https://www.google.nl/maps/place/Fornheselaan+202,+3734+GE+Den+Dolder/@52.1411996,5.2497874,17z/data=!3m1!4b1!4m6!3m5!1s0x47c6420a63561345:0x1000ec5122a66e07!8m2!3d52.1411963!4d5.2523623!16s%2Fg%2F11vl9kgr4t?entry=ttu&g_ep=EgoyMDI1MDUxNS4xIKXMDSoASAFQAw%3D%3D"
                    target="_blank" rel="noopener noreferrer" class="hover:underline">
@@ -246,9 +321,15 @@
     </section>
 
     <!-- Footer -->
-    <footer class="text-center text-sm text-gray-500 py-1">
-        &copy; 2025 ZAEG. Alle rechten voorbehouden.
+    <footer class="text-center text-sm text-gray-500 py-3">
+        &copy; 2025 ZAEG. Alle rechten voorbehouden. <a href="./privacy.html" class="hover:underline">Privacy</a>
     </footer>
 
+    <script>
+        if (navigator.doNotTrack !== "1" && window.doNotTrack !== "1") {
+            fetch("https://script.google.com/macros/s/AKfycbw2OFjmaODQpj4bOyuC3XC5ICdMxNLyHWJGgH9JnBwyqGhulGStvvFieq4CbAH1VNZC/exec?pagina=" + encodeURIComponent(location.pathname))
+                .catch(function () {});
+        }
+    </script>
 </body>
 </html>
